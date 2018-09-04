@@ -15,18 +15,17 @@
 <body>
   <nav class="green lighten-1" role="navigation">
     <div class="nav-wrapper">
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <a href="#" class="brand-logo">
-        <img style="margin: 5px 15px;height: 80px;" src="/images/np-logo.png">
+      <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <a href="#" class="brand-logo" aria-label="Logo">
+        <img style="margin: 5px 15px;height: 80px;" alt="Navigate Pain Logo" src="/images/np-logo.png">
       </a>
 
       <ul class="center-nav hide-on-med-and-down">
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Pricing</a></li>
+        <li><a href="#feature_list">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
         <li><a href="#">Support</a></li>
       </ul>
 
-      <!-- Dropdown Structure -->
       <ul id="language-selector" class="dropdown-content">
         <li><a href="#!">English</a></li>
         <li><a href="#!">Danish</a></li>
@@ -41,9 +40,9 @@
       </ul>
     </div>
   </nav>
-  <ul class="sidenav" id="mobile-demo">
-    <li><a href="#"><i class="material-icons">playlist_add_check</i>Features</a></li>
-    <li><a href="#"><i class="material-icons">credit_card</i>Pricing</a></li>
+  <ul class="sidenav" id="mobile-menu">
+    <li><a href="#feature_list"><i class="material-icons">playlist_add_check</i>Features</a></li>
+    <li><a href="#pricing"><i class="material-icons">credit_card</i>Pricing</a></li>
     <li><a href="#"><i class="material-icons">help_outline</i>Support</a></li>
     <div class="sidenav-bottom">
       <li><a href="#" class="btn green waves-effect waves-light">Try free for 30 days</a></li>
@@ -163,7 +162,7 @@
     </div>
   </div> -->
 
-  <div class="section grey lighten-5">
+  <div id="pricing" class="section scrollspy grey lighten-5">
     <div class="container">
       <div class="row center">
         <h3>Pricing</h3>
@@ -298,7 +297,7 @@
     </div>
   </div>
 
-  <div class="section">
+  <div id="feature_list" class="section scrollspy">
     <div class="container">
       <div class="row center">
         <h3>All features</h3>
@@ -480,17 +479,18 @@
     <div class="footer-copyright">
       <div class="container">
         <i class="material-icons left">copyright</i>
-        <script type="text/javascript">document.write(new Date().getFullYear())</script> Aglance Solutions - All rights reserved
+        <script type="text/javascript" defer>document.write(new Date().getFullYear())</script> Aglance Solutions - All rights
+        reserved
       </div>
     </div>
   </footer>
 
 
   <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js" async></script>
+  <script src="js/jquery.magnific-popup.min.js" async></script>
+  <script src="js/materialize.js" async></script>
+  <script src="js/init.js" async></script>
 
 </body>
 

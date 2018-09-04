@@ -8,6 +8,7 @@
     $('.testimonial-slider').slider();
     $(".language-dropdown").dropdown();
     $('.tooltipped').tooltip();
+    $('.scrollspy').scrollSpy();
 
     $(".magnific-popup-iframe-frontpage").magnificPopup({
       type: "iframe",
