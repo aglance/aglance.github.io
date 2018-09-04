@@ -1,73 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Starter Template - Materialize</title>
 
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>Navigate Pain</title>
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/jquery.magnific-popup.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
-<body>
-  <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
 
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Navbar Link</a></li>
+<body>
+  <nav class="green lighten-1" role="navigation">
+    <div class="nav-wrapper">
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <a href="#" class="brand-logo">
+        <img style="margin: 5px 15px;height: 80px;" src="/images/np-logo.png">
+      </a>
+
+      <ul class="center-nav hide-on-med-and-down">
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Support</a></li>
+
       </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#" class="btn btn-default waves-effect waves-green">Try free for 30 days</a></li>
+        <li><a href="https://app.navigatepain.com/login">Login</a></li>
+      </ul>
     </div>
   </nav>
-  <div class="section no-pad-bot" id="index-banner">
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="#"><i class="material-icons">playlist_add_check</i>Features</a></li>
+    <li><a href="#"><i class="material-icons">credit_card</i>Pricing</a></li>
+    <li><a href="#"><i class="material-icons">help_outline</i>Support</a></li>
+    <div class="sidenav-bottom">
+      <li><a href="#" class="btn green waves-effect waves-light">Try free for 30 days</a></li>
+      <li><a href="https://app.navigatepain.com/login"><i class="material-icons">exit_to_app</i>Login</a></li>
+    </div>
+  </ul>
+  <div class="green lighten-1 section no-pad-bot" id="index-banner">
     <div class="container">
-      <br><br>
-      <h1 class="header center orange-text">Starter Template</h1>
       <div class="row center">
-        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        <div class="col m10 offset-m1 l8 offset-l2">
+          <h4 class="header center white-text">The worlds best digital pain mapping tool for clinics and research usage.</h4>
+          <h6 class="header center white-text">Making invisble experience visible. Integrate a visual understanding of patient
+            symptoms.
+          </h6>
+        </div>
       </div>
+      <br>
       <div class="row center">
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
+        <div class="col m8 offset-m2 l6 offset-l3">
+          <div class="badge-parent" onclick="ga('send', 'event', 'video', 'play', 'frontpage video');">
+            <a href="https://www.youtube.com/watch?v=0VRrcut4zR0" class="magnific-popup-iframe-frontpage">
+              <img src="/images/frontpage.png" class="responsive-img " alt="Navigate Pain">
+            </a>
+          </div>
+        </div>
       </div>
-      <br><br>
-
+      <br>
+      <br>
+      <div class="row center">
+        <form action="/signup" method="GET">
+          <div class="col s12 m3 offset-m3">
+            <div class="input-field email">
+              <input id="email" name="email" type="text" class="validate white-text" required>
+              <label for="email" class="white-text">Insert your e-mail</label>
+            </div>
+          </div>
+          <div class="col s12 m3">
+            <button type="submit" class="btn-default btn-large waves-effect waves-green">Try free for 30 days<i class="material-icons right">send</i></button>
+          </div>
+        </form>
+      </div>
+      <br>
     </div>
   </div>
 
+  <div class="section grey lighten-5">
 
-  <div class="container">
-    <div class="section">
+    <div class="container">
 
       <!--   Icon Section   -->
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+            <h2 class="center light-green-text"><i class="material-icons">flash_on</i></h2>
             <h5 class="center">Speeds up development</h5>
 
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our
+              custom components. Additionally, we refined animations and transitions to provide a smoother experience for
+              developers.
+            </p>
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+            <h2 class="center light-green-text"><i class="material-icons">group</i></h2>
             <h5 class="center">User Experience Focused</h5>
 
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework
+              that incorporates components and animations that provide more feedback to users. Additionally, a single underlying
+              responsive system across all platforms allow for a more unified user experience.</p>
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+            <h2 class="center light-green-text"><i class="material-icons">settings</i></h2>
             <h5 class="center">Easy to work with</h5>
 
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+            <p class="light">We have provided detailed documentation as well as specific code examples to help new users
+              get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
           </div>
         </div>
       </div>
@@ -76,38 +124,368 @@
     <br><br>
   </div>
 
-  <footer class="page-footer orange">
+
+  <div class="section green lighten-1">
+    <div class="container">
+
+      <!--   Icon Section   -->
+      <div class="row white-text">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">Speeds up development</h5>
+
+            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our
+              custom components. Additionally, we refined animations and transitions to provide a smoother experience for
+              developers.
+            </p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center"><i class="material-icons">group</i></h2>
+            <h5 class="center">User Experience Focused</h5>
+
+            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework
+              that incorporates components and animations that provide more feedback to users. Additionally, a single underlying
+              responsive system across all platforms allow for a more unified user experience.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Easy to work with</h5>
+
+            <p class="light">We have provided detailed documentation as well as specific code examples to help new users
+              get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br><br>
+  </div>
+
+  <div class="section grey lighten-5">
+    <div class="container">
+      <div class="row center">
+        <h3>Pricing</h3>
+        <p>No binding. No credit card required on, when signing up for Navigate Pain.</p>
+        <p>Introductory prices:</p>
+      </div>
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="blue white-text card-content center top">
+              <h5>Basic</h5>
+            </div>
+            <div class="card-content center pad-top">
+              <h5 class='blue-text txt-underline'><small>€</small>24.99<small>/mo.</small></h5>
+              <h2 class='blue-text pricing'><small>€</small>0<small>/mo.</small></h2>
+            </div>
+            <ul class='collection center'>
+              <li class='collection-item'>
+                <strong>Unlimited</strong> patients
+              </li>
+              <li class='collection-item'>
+                <strong>1 pain-drawing</strong> per day per patient
+              </li>
+              <li class='collection-item'>
+                <strong>3</strong> pain types, each with <strong>3</strong> intensities
+              </li>
+              <li class='collection-item'>
+                <strong>VAS</strong> Scales
+              </li>
+              <li class='collection-item'>
+                <strong>Pain type</strong> toggling
+              </li>
+              <li class='collection-item'>
+                <strong>Unlimited</strong> sub-users (clinicians/researchers)
+              </li>
+            </ul>
+            <div class="card-content center">
+              <div class="row">
+                <div class="col s12">
+                  <button class='btn-large blue'>Get started</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="red white-text card-content center top">
+              <h5>Pro</h5>
+            </div>
+            <div class="yellow card-content center sub-top">
+              <p>Most popular</p>
+            </div>
+            <div class="card-content center">
+              <h5 class='red-text txt-underline'><small>€</small>69.99<small>/mo.</small></h5>
+              <h2 class='red-text pricing'><small>€</small>34.99<small>/mo.*</small></h2>
+            </div>
+            <ul class='collection center'>
+              <li class='collection-item'>
+                Everything in <strong>Basic</strong> and:
+              </li>
+              <li class='collection-item'>
+                <strong>11</strong> pain types, each with <strong>3</strong> intensities
+              </li>
+              <li class='collection-item'>
+                <strong>3 pain-drawing</strong> per day per patient
+              </li>
+              <li class='collection-item'>
+                <strong>Timeline</strong> view of pain development
+              </li>
+              <li class='collection-item'>
+                <strong>Pixel calculations</strong> for body parts
+              </li>
+              <li class='collection-item'>
+                <strong>Export functionality</strong> for PDF and CSV
+              </li>
+            </ul>
+            <div class="card-content center">
+              <div class="row">
+                <div class="col s12">
+                  <button class='btn-large red'>Try free for 30 days</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="purple white-text card-content center top">
+              <h5>Research</h5>
+            </div>
+            <div class="card-content center pad-top">
+              <h5 class='purple-text txt-underline'><small>€</small>129.99<small>/mo.</small></h5>
+              <h2 class='purple-text pricing'><small>€</small>69.99<small>/mo.**</small></h2>
+              <h6 class='purple-text'></small></h6>
+            </div>
+            <ul class='collection center'>
+              <li class='collection-item'>
+                Everything in <strong>Pro</strong> and:
+              </li>
+              <li class='collection-item'>
+                <strong>Enriched and detailed exports</strong> for with bulk-options
+              </li>
+              <li class='collection-item'>
+                <strong>Reminder scheduler</strong> for patients
+              </li>
+              <li class='collection-item'>
+                Patient <strong>completions / feedback</strong> responses
+              </li>
+              <li class='collection-item'>
+                <strong>Anatomay overlays</strong> (myotomes/dermatones)
+              </li>
+              <li class='collection-item'>
+                <strong>Sub-chart division</strong> calculations
+              </li>
+            </ul>
+            <div class="card-content center">
+              <div class="row">
+                <div class="col s12">
+                  <button class='btn-large purple'>Try free for 30 days</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row center">
+        <span>* billed annually - <small>€</small>45.99<small>/mo.</small> billed monthly</span>
+        <br>
+        <span>** billed annually - <small>€</small>85.99<small>/mo.</small> billed monthly</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <div class="row center">
+        <h3>All features</h3>
+      </div>
+      <div class="row">
+        <div class="col s12 m12">
+          <table class="striped responsive-table">
+            <thead class="feature-table-header">
+              <tr>
+                <th width="55%">Feature</th>
+                <th class="blue-text center">Basic</th>
+                <th class="red-text center">Pro</th>
+                <th class="purple-text center">Research</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Unlimited patients</td>
+                <td><i class="material-icons center full-width">check_box</i></td>
+                <td><i class="material-icons center full-width">check_box</i></td>
+                <td><i class="material-icons center full-width">check_box</i></td>
+              </tr>
+              <tr>
+                <td>Pain-drawings per day per patient</td>
+                <td class="center"><b>1</b></td>
+                <td class="center"><b>3</b></td>
+                <td class="center"><b>6</b></td>
+              </tr>
+              <tr>
+                <td>Pain-types, each with 3 intensities</td>
+                <td class="center"><b>3</b></td>
+                <td class="center"><b>11</b></td>
+                <td class="center"><b>11</b></td>
+              </tr>
+              <tr>
+                <td>VAS scale records (usual and current pain)</td>
+                <td><i class="material-icons center full-width">check_box</i></td>
+                <td><i class="material-icons center full-width">check_box</i></td>
+                <td><i class="material-icons center full-width">check_box</i></td>
+              </tr>
+              <tr>
+                <td>Pain-type toggling</td>
+                <td><i class="material-icons center full-width">check_box</i></td>
+                <td><i class="material-icons center full-width">check_box</i></td>
+                <td><i class="material-icons center full-width">check_box</i></td>
+              </tr>
+              <tr>
+                <td>Unlimited sub-users (clinicians/researchers)</td>
+                <td><i class="material-icons center full-width">check_box</i></td>
+                <td><i class="material-icons center full-width">check_box</i></td>
+                <td><i class="material-icons center full-width">check_box</i></td>
+              </tr>
+              <tr>
+                <td>Timeline view of pain development</td>
+                <td><i class="material-icons center full-width">check_box_outline_blank</i></td>
+                <td><i class="material-icons center full-width">check_box</i></td>
+                <td><i class="material-icons center full-width">check_box</i></td>
+              </tr>
+              <tr>
+                <td>Pixel calculations for each pain-type</td>
+                <td><i class="material-icons center full-width">check_box_outline_blank</i></td>
+                <td><i class="material-icons center full-width">check_box</i></td>
+                <td><i class="material-icons center full-width">check_box</i></td>
+              </tr>
+              <tr>
+                <td>Area calcuation for body parts</td>
+                <td><i class="material-icons center full-width">check_box_outline_blank</i></td>
+                <td><i class="material-icons center full-width">check_box</i></td>
+                <td><i class="material-icons center full-width">check_box</i></td>
+              </tr>
+              <tr>
+                <td>PDF export functionality</td>
+                <td><i class="material-icons center full-width">check_box_outline_blank</i></td>
+                <td><i class="material-icons center full-width">check_box</i></td>
+                <td><i class="material-icons center full-width">check_box</i></td>
+              </tr>
+              <tr>
+                <td>CSV export functionality</td>
+                <td><i class="material-icons center full-width">check_box_outline_blank</i></td>
+                <td><i class="material-icons center full-width">check_box</i></td>
+                <td><i class="material-icons center full-width">check_box</i></td>
+              </tr>
+              <tr>
+                <td>PNG export functionality</td>
+                <td><i class="material-icons center full-width">check_box_outline_blank</i></td>
+                <td><i class="material-icons center full-width">check_box</i></td>
+                <td><i class="material-icons center full-width">check_box</i></td>
+              </tr>
+              <tr>
+                <td>REDCAP export functionality</td>
+                <td><i class="material-icons center full-width">check_box_outline_blank</i></td>
+                <td><i class="material-icons center full-width">check_box_outline_blank</i></td>
+                <td><i class="material-icons center full-width">check_box</i></td>
+              </tr>
+              <tr>
+                <td>Reminder scheduler for patients</td>
+                <td><i class="material-icons center full-width">check_box_outline_blank</i></td>
+                <td><i class="material-icons center full-width">check_box_outline_blank</i></td>
+                <td><i class="material-icons center full-width">check_box</i></td>
+              </tr>
+              <tr>
+                <td>Patient completions / feedback responses</td>
+                <td><i class="material-icons center full-width">check_box_outline_blank</i></td>
+                <td><i class="material-icons center full-width">check_box_outline_blank</i></td>
+                <td><i class="material-icons center full-width">check_box</i></td>
+              </tr>
+              <tr>
+                <td>Anatomay overlays (myotomes/dermatones)</td>
+                <td><i class="material-icons center full-width">check_box_outline_blank</i></td>
+                <td><i class="material-icons center full-width">check_box_outline_blank</i></td>
+                <td><i class="material-icons center full-width">check_box</i></td>
+              </tr>
+              <tr>
+                <td>Sub-chart division calculations</td>
+                <td><i class="material-icons center full-width">check_box_outline_blank</i></td>
+                <td><i class="material-icons center full-width">check_box_outline_blank</i></td>
+                <td><i class="material-icons center full-width">check_box</i></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><button class='btn blue'>Get started</button></td>
+                <td><button class='btn red'>Try free for 30 days</button></td>
+                <td><button class='btn purple'>Try free for 30 days</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <br><br>
+  </div>
+
+  <footer class="page-footer grey">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
+          <h5 class="white-text">Aglance Solutions</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full
+            time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+          <ul>
+            <li><i class="material-icons left">phone</i>+45 416 278 13</li>
+            <br>
+            <li><i class="material-icons left">email</i><a class="white-text" href="mailto:info@aglancesolutions.com">info@aglancesolutions.com</a></li>
+            <br>
+            <li><i class="material-icons left">home</i>Tornhojparken 25, 9200 Aalborg Ost,Denmark</li>
+            <br>
+            <li><i class="material-icons left">domain</i>CVR-nr. 37169986</li>
+          </ul>
 
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
+          <h5 class="white-text">Site</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="white-text" href="#!">About us</a></li>
+            <li><a class="white-text" href="#!">Functions</a></li>
+            <li><a class="white-text" href="#!">Prices</a></li>
+            <li><a class="white-text" href="#!">Blog</a></li>
           </ul>
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
+          <h5 class="white-text">Legal</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="white-text" href="#!">Terms of Service</a></li>
+            <li><a class="white-text" href="#!">Privacy policy</a></li>
+            <li><a class="white-text" href="#!">EU GDPR</a></li>
+            <li><a class="white-text" href="#!">Status</a></li>
+          </ul>
+          <h5 class="white-text">Social</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Facebook</a></li>
+            <li><a class="white-text" href="#!">LinkedIn</a></li>
+            <li><a class="white-text" href="#!">Twitter</a></li>
+            <li><a class="white-text" href="#!">YouTube</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+        <i class="material-icons left">copyright</i>
+        <script type="text/javascript">document.write(new Date().getFullYear())</script> Aglance Solutions - All rights reserved
       </div>
     </div>
   </footer>
@@ -115,8 +493,10 @@
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
 
-  </body>
+</body>
+
 </html>

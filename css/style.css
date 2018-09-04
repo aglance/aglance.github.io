@@ -1,4 +1,5 @@
 /* Custom Stylesheet */
+
 /**
  * Use this file to override Materialize files so you can update
  * the core Materialize files in the future
@@ -7,8 +8,93 @@
  */
 
 .icon-block {
-  padding: 0 15px;
+    padding: 0 15px;
 }
+
 .icon-block .material-icons {
-	font-size: inherit;
+    font-size: inherit;
+}
+
+.txt-underline {
+    text-decoration: line-through;
+}
+
+.feature-table-header th {
+    font-weight: 800;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.card-content.top {
+    padding: 10px ;
+}
+
+.card-content.sub-top {
+    padding: 0;
+}
+
+.card-content .pricing {
+    margin-top: 0px !important;
+}
+
+.card-content.pad-top {
+    padding-top: 46px;
+}
+
+.btn-default {
+    background-color: #fff;
+    color: #212121;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active {
+    background-color: #f0f0f0;
+}
+
+.sidenav-bottom {
+    position: absolute;
+    width: 100%;
+    bottom: calc(0% + 60px);
+    background-color: white;
+}
+
+.center-nav {
+    position: absolute;
+    left: calc(50% - 8.5em);
+}
+
+/* label color */
+
+.input-field.email label {
+    color: #fff;
+}
+
+/* label focus color */
+
+.input-field.email input[type=text]:focus+label {
+    color: #fff;
+}
+
+/* label underline focus color */
+
+.input-field.email input[type=text]:focus {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #fff;
+}
+
+/* valid color */
+
+.input-field.email input[type=text].valid {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #fff;
+}
+
+/* invalid color */
+
+.input-field.email input[type=text].invalid {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #fff;
 }
