@@ -24,11 +24,20 @@
         <li><a href="#">Features</a></li>
         <li><a href="#">Pricing</a></li>
         <li><a href="#">Support</a></li>
-
       </ul>
+
+      <!-- Dropdown Structure -->
+      <ul id="language-selector" class="dropdown-content">
+        <li><a href="#!">English</a></li>
+        <li><a href="#!">Danish</a></li>
+        <li><a href="#!">Spanish</a></li>
+        <li><a href="#!">German</a></li>
+      </ul>
+
       <ul class="right hide-on-med-and-down">
         <li><a href="#" class="btn btn-default waves-effect waves-green">Try free for 30 days</a></li>
-        <li><a href="https://app.navigatepain.com/login">Login</a></li>
+        <li><a href="https://app.navigatepain.com/login" target="_blank" rel="noopener noreferrer">Login</a></li>
+        <li><a class="language-dropdown" href="#!" data-target="language-selector">Language<i class="material-icons right">arrow_drop_down</i></a></li>
       </ul>
     </div>
   </nav>
@@ -64,16 +73,9 @@
       <br>
       <br>
       <div class="row center">
-        <form action="/signup" method="GET">
-          <div class="col s12 m3 offset-m3">
-            <div class="input-field email">
-              <input id="email" name="email" type="text" class="validate white-text" required>
-              <label for="email" class="white-text">Insert your e-mail</label>
-            </div>
-          </div>
-          <div class="col s12 m3">
-            <button type="submit" class="btn-default btn-large waves-effect waves-green">Try free for 30 days<i class="material-icons right">send</i></button>
-          </div>
+        <div class="col s12">
+          <a href="#" class="btn-default btn-large waves-effect waves-green">Try free for 30 days<i class="material-icons right">send</i></a>
+        </div>
         </form>
       </div>
       <br>
@@ -81,28 +83,22 @@
   </div>
 
   <div class="section grey lighten-5">
-
     <div class="container">
-
-      <!--   Icon Section   -->
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center light-green-text"><i class="material-icons">flash_on</i></h2>
             <h5 class="center">Speeds up development</h5>
-
             <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our
               custom components. Additionally, we refined animations and transitions to provide a smoother experience for
               developers.
             </p>
           </div>
         </div>
-
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center light-green-text"><i class="material-icons">group</i></h2>
             <h5 class="center">User Experience Focused</h5>
-
             <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework
               that incorporates components and animations that provide more feedback to users. Additionally, a single underlying
               responsive system across all platforms allow for a more unified user experience.</p>
@@ -125,47 +121,46 @@
   </div>
 
 
-  <div class="section green lighten-1">
+  <div class="section green lighten-1 white-text">
     <div class="container">
-
-      <!--   Icon Section   -->
-      <div class="row white-text">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
-
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our
-              custom components. Additionally, we refined animations and transitions to provide a smoother experience for
-              developers.
-            </p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework
-              that incorporates components and animations that provide more feedback to users. Additionally, a single underlying
-              responsive system across all platforms allow for a more unified user experience.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
-
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users
-              get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-          </div>
-        </div>
+      <div class="row center">
+        <h3>What our current users think:</h3>
       </div>
 
+        <div class="testimonial-slider">
+            <ul class="slides">
+              <li>
+                <img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->
+                <div class="caption center-align">
+                  <h3>This is our big Tagline!</h3>
+                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+              </li>
+              <li>
+                <img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
+                <div class="caption left-align">
+                  <h3>Left Aligned Caption</h3>
+                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+              </li>
+              <li>
+                <img src="https://lorempixel.com/580/250/nature/3"> <!-- random image -->
+                <div class="caption right-align">
+                  <h3>Right Aligned Caption</h3>
+                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+              </li>
+              <li>
+                <img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
+                <div class="caption center-align">
+                  <h3>This is our big Tagline!</h3>
+                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+              </li>
+            </ul>
+          </div>
+
     </div>
-    <br><br>
   </div>
 
   <div class="section grey lighten-5">

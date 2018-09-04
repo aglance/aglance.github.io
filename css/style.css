@@ -28,7 +28,7 @@
 }
 
 .card-content.top {
-    padding: 10px ;
+    padding: 10px;
 }
 
 .card-content.sub-top {
@@ -97,4 +97,13 @@
 .input-field.email input[type=text].invalid {
     border-bottom: 1px solid #fff;
     box-shadow: 0 1px 0 0 #fff;
+}
+
+@media only screen and (min-width: 600px) {
+    #toast-container {
+        top: auto;
+        right: auto;
+        bottom: 2%;
+        left: 2%;
+    }
 }

@@ -1,7 +1,13 @@
 (function ($) {
   $(function () {
+    if (localStorage.getItem('cookie-consent') == null) {
+      var toastHTML = '<span>Our website uses <a href="#">cookies</a></span><button class="btn-flat toast-action" onclick="M.Toast.dismissAll()">Accept</button>';
+      M.toast({ html: toastHTML, displayLength: Math.pow(10, 9), completeCallback: () => localStorage.setItem('cookie-consent', 'true') });
+    }
     $('.sidenav').sidenav();
-    
+    $('.testimonial-slider').slider();
+    $(".language-dropdown").dropdown();
+
     $(".magnific-popup-iframe-frontpage").magnificPopup({
       type: "iframe",
       showCloseBtn: false,
