@@ -7,6 +7,7 @@
     $('.sidenav').sidenav();
     $('.testimonial-slider').slider();
     $(".language-dropdown").dropdown();
+    $('.tooltipped').tooltip();
 
     $(".magnific-popup-iframe-frontpage").magnificPopup({
       type: "iframe",

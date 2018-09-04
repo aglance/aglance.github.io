@@ -39,6 +39,14 @@
     margin-top: 0px !important;
 }
 
+.tooltip-content {
+    max-width: 350px;
+}
+
+.tooltipped .material-icons {
+    font-size: 1.3em;
+}
+
 .card-content.pad-top {
     padding-top: 46px;
 }
